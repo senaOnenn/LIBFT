@@ -1,15 +1,14 @@
 NAME = libft.a
-SRC = ft_isalpha.c
-
-OBJ = $(SRC:.c=.o)
-
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-AR = ar rcs
 
-all: $(NAME)
+SRC = ft_isalpha.c	ft_isascii.c	ft_atoi.c	ft_isalnum.c	ft_isdigit.c	ft_isprint.c	ft_strchr.c \
+	ft_tolower.c ft_toupper.c	ft_strdup.c	ft_strlen.c
 
-$(NAME): $(OBJ)
+OBJ = $(SRC:.c=.o)	
+all	: $(NAME)
+ AR = ar rcs	
+$(NAME)	: $(OBJ)
 	$(AR) $(NAME) $(OBJ)
 
 %.o: %.c

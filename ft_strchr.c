@@ -6,7 +6,22 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:06:40 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/20 18:34:09 by eonen            ###   ########.fr       */
+/*   Updated: 2025/06/22 14:54:28 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char *ft_strchr(const char *s, int c)
+{
+    while(*s != '\0')
+    {
+        if (*s == (char)c)
+            return (char *)s;
+        s++;
+    }
+    if ((char)c == '\0')
+        return (char *)s;
+
+    return NULL;
+}

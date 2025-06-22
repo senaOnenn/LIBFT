@@ -6,7 +6,13 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:06:53 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/20 18:34:09 by eonen            ###   ########.fr       */
+/*   Updated: 2025/06/22 19:43:43 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+size_t ft_strlcpy(char *dst, const char *src, size_t size)
+{
+    
+}
