@@ -6,7 +6,7 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:07:19 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/22 21:46:47 by eonen            ###   ########.fr       */
+/*   Updated: 2025/06/23 21:04:44 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char *ft_strdup(const char *s);
 size_t ft_strlcat(char *dst, const char *src, size_t size);
 size_t ft_strlcpy(char *dst, const char *src, size_t size);
 size_t ft_strlen(const char *str);
-//strncmp
+int ft_strncmp(const char *s1, const char *s2, size_t n);
 //strnstr
 //strchr
 int ft_tolower(int c);
