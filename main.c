@@ -34,9 +34,28 @@
 //     printf("src: %s\n", src);
 // }
 
+/*
 int main(){
     char s1[] = "sena";
     char s2[] = "onen";
 
     printf("%d", ft_strncmp(s1, s2, 3));
+}*/
+
+/*
+int main ()
+{
+    char haystack[] = "selam dunya";
+    char needle [] = "";
+
+    printf ("%s \n", ft_strnstr(haystack,needle,5));
+
+}*/
+
+
+int main (){
+    char s[] = "selam naber";
+
+    printf("%s \n", ft_strrchr(s,'\0'));
 }
+
