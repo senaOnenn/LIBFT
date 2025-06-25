@@ -53,9 +53,46 @@ int main ()
 }*/
 
 
-int main (){
-    char s[] = "selam naber";
+// int main (){
+//     char s[] = "selam naber";
 
-    printf("%s \n", ft_strrchr(s,'\0'));
+//     printf("%s \n", ft_strrchr(s,'\0'));
+// }
+
+// int main ()
+// {
+//     int buffer1;
+
+//     //bir char dizisini belirli bir karakterle doldurma
+//     //ft_memset(&buffer1, 255, 4);
+//     //  ft_memset(&buffer1, 227, 2);
+//     //  ft_memset(&buffer1, 224, 1);
+
+//     //ft_memset(&buffer1, 255, 4);
+//     ft_memset(&buffer1, 1, 2);
+//     ft_memset(&buffer1, 0, 1);
+
+
+
+//     printf("buffer1: %d",buffer1);
+// }
+
+// int main()
+// {
+//     char src[] = "selam cnm";
+//     char dest[20];
+
+//     //ft_memset(dest,0,20);
+//     ft_memcpy(dest,src, 7);
+
+//     printf("%s",dest);
+// }
+
+int main()
+{
+    char str[] = "selammm";
+    char str1[] = "akari";
+
+    printf("%d", ft_memcmp(str, str1, 2));
 }
 
