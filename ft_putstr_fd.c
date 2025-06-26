@@ -1,29 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/20 17:06:22 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/25 21:01:46 by eonen            ###   ########.fr       */
+/*   Created: 2025/06/26 14:23:13 by eonen             #+#    #+#             */
+/*   Updated: 2025/06/26 14:23:14 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void *ft_memchr(const void *s, int c, size_t n)
-{
-    unsigned const char *ptr;
-    size_t i;
-    ptr = (unsigned const char *)s;
-    i = 0;
-    
-    while(i < n)
-    {
-        if(ptr[i] == (unsigned char)c)
-            return (void *)&ptr[i];
-        i++;
-    }
-    return NULL;
-}

@@ -88,11 +88,22 @@ int main ()
 //     printf("%s",dest);
 // }
 
-int main()
-{
-    char str[] = "selammm";
-    char str1[] = "akari";
+// int main()
+// {
+//     char str[] = "selammm";
+//     char str1[] = "akari";
 
-    printf("%d", ft_memcmp(str, str1, 2));
-}
+//     printf("%d", ft_memcmp(str, str1, 2));
+// }
+
+// int main()
+// {
+//     char s[10] = "selam";
+//     ft_bzero(s,5);
+
+//     for (size_t i = 0; i < 10; i++)
+//     {
+//         printf("%d ", (unsigned char)s[i]);
+//     }
+// }
 

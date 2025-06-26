@@ -6,7 +6,7 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:07:19 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/25 20:16:22 by eonen            ###   ########.fr       */
+/*   Updated: 2025/06/26 13:42:00 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 #include <stdlib.h>
 
 int	ft_atoi(char *str);
-//bzero
-//calloc
+void ft_bzero(void *s, size_t n);
+void *ft_calloc(size_t nmemb, size_t size);
 int ft_isalnum(int c);
 int ft_isalpha(int c);
 int ft_isascii(int c);
