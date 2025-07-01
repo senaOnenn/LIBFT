@@ -107,3 +107,12 @@ int main ()
 //     }
 // }
 
+
+int main()
+{
+    printf("selam");
+    char s[] = "merhaba";
+    char *sonuc;
+    sonuc = ft_substr(s, 2,3);
+    printf("%s \n", sonuc);
+} 
