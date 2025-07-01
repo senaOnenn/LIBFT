@@ -6,38 +6,48 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:06:32 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/25 19:38:16 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/01 17:31:19 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void * ft_memmove(void *dest, const void *src, size_t n)
+static void	cpyforward(unsigned char *d, const unsigned char *s, size_t n)
 {
-    unsigned char *d;
-    unsigned const char *s;
-    size_t i;
+	size_t	i;
 
-    d = (unsigned char *)dest;
-    s = (unsigned const char *)src;
-    i = 0;
-    if (!dest && !src)
-        return (NULL);
-    if (d < s)
-    {
-        while (i < n)
-        {
-            d[i] = s[i];
-            i++;
-        }
-    }else
-    {
-        i = n;
-        while (i > 0)
-        {
-            i--;
-            d[i] = s[i];
-        } 
-    }
-    return dest;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+}
+
+static void	cpybackward(unsigned char *d, const unsigned char *s, size_t n)
+{
+	size_t	i;
+
+	i = n;
+	while (i > 0)
+	{
+		i--;
+		d[i] = s[i];
+	}
+}
+
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	unsigned char			*d;
+	const unsigned char		*s;
+
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	if (!dest && !src)
+		return (NULL);
+	if (d < s)
+		ft_memcpy_forward(d, s, n);
+	else
+		ft_memcpy_backward(d, s, n);
+	return (dest);
 }

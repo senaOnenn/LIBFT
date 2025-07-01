@@ -6,17 +6,15 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:07:10 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/22 12:47:27 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/01 16:50:25 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if(c <= 'Z' && c >= 'A')
-    {
-        return (c + 32);
-    }
-    return (c);
+	if (c <= 'Z' && c >= 'A')
+		return (c + 32);
+	return (c);
 }

@@ -6,37 +6,23 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:06:37 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/25 18:02:38 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/01 17:36:59 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-    size_t i;
-    unsigned char *ptr;
-    
-    i=0;
-    ptr = (unsigned char *)s;
+	size_t			i;
+	unsigned char	*ptr;
 
-    while (i < n)
-    {
-        ptr[i] = (unsigned char)c;
-        i++;
-    }
-    return s;
+	i = 0;
+	ptr = (unsigned char *)s;
+	while (i < n)
+	{
+		ptr[i] = (unsigned char)c;
+		i++;
+	}
+	return (s);
 }
-
-
-//-7200
-//1110 0011 1110 0000
-//0001 1100 0001 1111
-//0001 1100 0010 0000
-
-//-256
-//1111 1111 0000 0000
-//0000 0000 1111 1111 
-//0000 0001 0000 0000
-
-//0000 0001 0000 0000

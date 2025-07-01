@@ -108,11 +108,56 @@ int main ()
 // }
 
 
+// int main()
+// {
+//     char s[] = "merhaba";
+//     char *sonuc;
+//     sonuc = ft_substr(s, 2,3);
+//     printf("%s \n", sonuc);
+// } 
+
+// char	to_upper_char(unsigned int index, char c)
+// {
+//     (void)index; 
+//     if (c >= 'a' && c <= 'z')
+//         return (c - 32);
+//     return (c);
+// }
+
+// int main ()
+// {
+//     char str[] = "Selamün";
+//     char *mapstr;
+
+//     mapstr = ft_strmapi(str, &to_upper_char);
+//     printf("%s",mapstr);
+// }
+
+// void to_upper(unsigned int index, char *ptr)
+// {
+//     (void)index;
+//     if (*ptr >= 'a' && *ptr <= 'z')
+//         *ptr -= 32;
+// }
+// int main()
+// {
+//     char s[]= "dfhsDDSDFDSDkh";
+//     char *ptr;
+//     ft_striteri(s, &to_upper);
+//     printf("%s", s);
+// }
+// int main()
+// {
+//     char str[] = "hello ";
+//     ft_putendl_fd(str, STDERR_FILENO);
+//     ft_putstr_fd(str, STDOUT_FILENO);
+// }
+
 int main()
 {
-    printf("selam");
-    char s[] = "merhaba";
-    char *sonuc;
-    sonuc = ft_substr(s, 2,3);
-    printf("%s \n", sonuc);
-} 
+    int fd;
+    ft_putnbr_fd(12345,STDOUT_FILENO);
+    ft_putchar_fd('\n',STDOUT_FILENO);
+    ft_putnbr_fd(-123, STDOUT_FILENO);
+}
+

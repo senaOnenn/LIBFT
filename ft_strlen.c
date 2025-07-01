@@ -6,18 +6,20 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:06:56 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/23 16:08:57 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/01 15:36:07 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-    int i = 0;
-    while(str[i] != '\0')
-    {
-      i++;
-    }
-    return i;
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }

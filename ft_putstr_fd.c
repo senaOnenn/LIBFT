@@ -6,7 +6,20 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 14:23:13 by eonen             #+#    #+#             */
-/*   Updated: 2025/06/26 14:23:14 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/01 17:53:07 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+#include <unistd.h>
+
+void	ft_putstr_fd(char *s, int fd)
+{
+	if (!s)
+		return ;
+	while (*s != '\0')
+	{
+		write(fd, s, 1);
+		s++;
+	}
+}
