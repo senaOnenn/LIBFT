@@ -6,7 +6,7 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:06:32 by eonen             #+#    #+#             */
-/*   Updated: 2025/07/01 17:31:19 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/02 16:49:20 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (!dest && !src)
 		return (NULL);
 	if (d < s)
-		ft_memcpy_forward(d, s, n);
+		cpyforward(d, s, n);
 	else
-		ft_memcpy_backward(d, s, n);
+		cpybackward(d, s, n);
 	return (dest);
 }

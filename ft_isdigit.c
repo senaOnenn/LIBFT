@@ -6,15 +6,17 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:06:15 by eonen             #+#    #+#             */
-/*   Updated: 2025/07/01 15:27:44 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/02 17:12:03 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <unistd.h>
 
 int	ft_isdigit(int c)
 {
-	if (c <= 9 && c >= 0)
+	if (c <= '9' && c >= '0')
 		return (1);
 	return (0);
 }
