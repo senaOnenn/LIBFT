@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 
+#define ZERO_MALLOC(type, count)((type *)memset(malloc(sizeof(type *)* count)),0, sizeof(type) * (count));
 int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
