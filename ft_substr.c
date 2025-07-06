@@ -6,12 +6,11 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 14:18:59 by eonen             #+#    #+#             */
-/*   Updated: 2025/07/01 17:43:54 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/06 12:36:10 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

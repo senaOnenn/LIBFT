@@ -6,13 +6,11 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 17:06:44 by eonen             #+#    #+#             */
-/*   Updated: 2025/07/01 17:27:49 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/06 12:36:41 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-#include <stdlib.h>
 
 char	*ft_strdup(const char *s)
 {

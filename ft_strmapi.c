@@ -6,12 +6,11 @@
 /*   By: eonen <eonen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 14:22:47 by eonen             #+#    #+#             */
-/*   Updated: 2025/07/01 17:50:13 by eonen            ###   ########.fr       */
+/*   Updated: 2025/07/06 12:36:22 by eonen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
